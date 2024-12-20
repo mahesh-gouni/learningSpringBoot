@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class StudentService {
+
     @Autowired
     private StudentRepo studentRepo;
 //    public StudentService(StudentRepo studentRepo){
@@ -19,6 +20,7 @@ public class StudentService {
     private MapperUtilities mapper;
 //    public  void SetStudentService(StudentRepo studentRepo){
 //        this.studentRepo=studentRepo;
+//
 //    }
 
     public void addingStudent(Student student) {
@@ -26,4 +28,5 @@ public class StudentService {
         studentRepo.save(studentEntity);
 
     }
+
 }
